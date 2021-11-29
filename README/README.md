@@ -14,7 +14,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - UWA-CYBER-ELK\Ansible\metricbeat-config.yml
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -89,7 +89,7 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 Filebeat collects log events from system logs which can track changes being made to crucial system files.
-Metricbeat takes metrics from the oporating system which can track things such as system up time, ect.
+Metricbeat takes metrics from the oporating system which can track things such as system up time, etc.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
