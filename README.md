@@ -4,14 +4,15 @@ The files in this repository were used to configure the network depicted below.
 
 ![NETWORK DIAGRAM](Images/Network_Diagram.png "NETWORK DIAGRAM")
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - UWA-CYBER-ELK\Ansible\elk_config.yaml
-  - UWA-CYBER-ELK\Ansible\filebeat-playbook.yaml
-  - UWA-CYBER-ELK\Ansible\metricbeat-playbook.yml
+The following files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat. These files are: 
+
+  - UWA-CYBER-ELK\Ansible\elk_config.yaml.txt
+  - UWA-CYBER-ELK\Ansible\filebeat-playbook.yaml.txt
+  - UWA-CYBER-ELK\Ansible\metricbeat-playbook.yml.txt
   - UWA-CYBER-ELK\Ansible\hosts.txt
-  - UWA-CYBER-ELK\Ansible\filebeat-config.yaml
-  - UWA-CYBER-ELK\Ansible\metricbeat-config.yml
+  - UWA-CYBER-ELK\Ansible\filebeat-config.yaml.txt
+  - UWA-CYBER-ELK\Ansible\metricbeat-config.yml.txt
 
 This document contains the following details:
 - Description of the Topology
@@ -47,8 +48,8 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Web machines can accept connections from the Internet. Access to these machine is only allowed from the following IP addresses:
-- 14.203.252.229
+Access to the web machines is only allowed from the following IP addresses:
+- <your public ip address>
 - 10.1.0.4
 
 Machines within the network can only be accessed by the Jump-box machine.
@@ -75,7 +76,7 @@ The playbook implements the following tasks:
 - Increase and use more memory
 - Download, Launch and enable the docker container at startup
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+The following screenshot displays the result of running the ELK playbook.
 ![ELK SETUP](Images/elk-playbook.png "ELK SETUP")
 
 ### Target Machines & Beats
