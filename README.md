@@ -78,7 +78,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running the ELK playbook.
 ![ELK SETUP](Images/elk-playbook.png "ELK SETUP")
-
+  
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - 10.1.0.5
